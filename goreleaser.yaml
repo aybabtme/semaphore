@@ -1,0 +1,20 @@
+build:
+  main: ./main.go
+  binary: semaphore
+  ldflags:
+    - -s -w -X main.build={{.Version}}
+  goos:
+    - windows
+    - darwin
+    - linux
+  goarch:
+    - amd64
+
+brews:
+  - tap:
+      owner: aybabtme
+      name: homebrew-tap
+
+nfpms:
+  - formats:
+      - deb
