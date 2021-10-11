@@ -44,3 +44,18 @@ done
 
 wait $(jobs -p)
 ```
+
+# using it
+
+[Grab a release](https://github.com/aybabtme/semaphore/releases) or :
+
+## on macOS
+
+```bash
+brew tap aybabtme/homebrew-tap
+brew install semaphore
+```
+
+# license
+
+The tool here is MIT. The code is 99.9% powered by a fork of bitbucket.org/avd/go-ipc, which is Apache 2.
